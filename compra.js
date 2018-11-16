@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
         precioTotalJuego.innerHTML = subTotal;
         var envioVal = envio + 1;
         impuestos.innerHTML = imp * precio * cantidad * envioVal;
-/*
+
         if (fisico.checked) {
             document.getElementById("shipping").style.display = 'block'
         } else if (digital.checked) {
@@ -45,14 +45,6 @@ document.addEventListener("DOMContentLoaded", function(){
             precioEnvio.style.display = 'block';
         } else if (digital.checked) {
             precioEnvio.style.display = 'none';
-            envio = 0;
-        }
-        */
-
-        if (fisico.checked) {
-            precioEnvio.style.display = 'block';
-        } else if (digital.checked) {
-            document.getElementById("shipping-price").inner
             envio = 0;
         }
 
