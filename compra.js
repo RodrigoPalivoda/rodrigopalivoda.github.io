@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function(){
         subTotal = cantidad * precio;
         precioTotalJuego.innerHTML = subTotal;
         var envioVal = envio + 1;
-        impuestos.innerHTML = imp * precio * cantidad * envioVal;
 
         if (fisico.checked) {
             document.getElementById("shipping").style.display = 'block'
@@ -42,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function(){
         }
         
         if (fisico.checked) {
-            precioEnvio.style.display = 'block';
+            precioEnvio.style.display = 'table-row';
         } else if (digital.checked) {
             precioEnvio.style.display = 'none';
             envio = 0;
@@ -68,7 +67,8 @@ document.addEventListener("DOMContentLoaded", function(){
             unidad.innerHTML = " ud."
         }
 
-
+    /*    impuestos.innerHTML = imp * precio * cantidad * envioVal; */
+        var impuestosVal = costoEnvio0 + ;
         costoEnvio0 = subTotal * envio;
         costoEnvio.innerHTML = costoEnvio0;
         costoTotal.innerHTML = precio * (imp + 1) * cantidad + costoEnvio * imp ;
