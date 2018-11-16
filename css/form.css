@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "Lato-Hair";
+    src: url(fonts/Lato-Hairline.ttf);
+}
+@font-face {
+    font-family: "Niramit-Regular";
+    src: url(fonts/Niramit-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Niramit-Regular";
+}
+
+body{
+    margin: 0;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+.main{
+    width: 625px;
+    height: 525px;
+    margin: 50px auto;
+/*    border: 1px solid rgb(163, 7, 7);*/
+    line-height: 50px;
+}
+
+.main h1{
+    text-align: center;
+    font-family: "Lato-Hair";
+    font-weight: 250;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 48px;
+}
+
+.main p{
+    color: rgb(235, 0, 0);
+    text-align: center;
+
+}
+
+.main form input{
+    border-radius: 3px;
+}
+.main ul li{
+    list-style: none;
+    position: relative;
+    float: right;
+}
+
+.main form input{
+    position: relative;
+    float: right;
+    margin-right: 25px;
+    width: 350px;
+    height: 32px;
+    margin-top: 9px;
+}
+
+.main form label{
+    position: relative;
+    padding-right: 50px;
+}
+
+.main button{
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    right: 290px;
+    background-color: rgb(0, 120, 175);
+    color: white;
+}

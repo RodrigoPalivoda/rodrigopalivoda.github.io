@@ -1,0 +1,98 @@
+.nav-bar {
+    width: 80%;
+    max-width: 1200px;
+    z-index: 1000;
+    background-color: rgb(0, 120, 175);
+    margin: 0 auto;
+}
+
+.s-nav-bar{
+    display: none;
+}
+
+.nav-bar ul{
+    list-style: none;
+    position: relative;
+    text-align: center;
+}
+
+.nav-bar .parent{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.nav-bar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+.nav-bar ul li:hover{
+    background-color: rgb(1, 91, 133);
+
+}
+
+.nav-bar ul li .children{
+    display: none;
+    width: 120px;
+}
+
+.nav-bar ul li:hover .children{
+    display: grid;
+    position: absolute;
+    z-index: 100;
+    width: auto;
+    min-width: 85px;
+    text-align: center;
+}
+
+.nav-bar ul li:hover .children.extended-a{
+    width: 260px;
+}
+.nav-bar ul li:hover .children.extended-b{
+    width: 150px;
+}
+
+.nav-bar .parent:hover .children{
+    background-color: rgb(0, 120, 175);
+}
+
+.nav-bar .children{
+    padding:0;
+}
+
+@media screen and (max-width: 720px){
+    .nav-bar{
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+
+    }
+
+    .s-nav-bar{
+        display: block;
+        background-color:rgb(0, 120, 175);
+    }
+
+    .s-nav-bar .btn-menu{
+        display: block;
+        padding: 20px;
+        color: white;
+        overflow: hidden;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+
+    }
+    .nav-bar{
+        display: none;
+    }
+
+}

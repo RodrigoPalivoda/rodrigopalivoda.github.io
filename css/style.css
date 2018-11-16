@@ -1,0 +1,351 @@
+@font-face {
+    font-family: "Niramit-Regular";
+    src: url(fonts/Niramit-Regular.ttf);
+}
+@font-face {
+    font-family: "Niramit-EL";
+    src: url(fonts/Niramit-ExtraLight.ttf);
+}
+@font-face {
+    font-family: "Lato-Hair";
+    src: url(fonts/Lato-Hairline.ttf);
+}
+@font-face {
+    font-family: "Lato-Light";
+    src: url(fonts/Lato-Light.ttf);
+}
+
+
+
+body {
+    margin: 0;
+    background-image: linear-gradient(rgb(38, 52, 54), rgb(0, 98, 110));
+    color: rgb(238, 238, 238);
+    font-family: "Niramit-EL";
+    font-weight: 100;
+}
+
+.bodiv {
+    position: relative;
+    top: 17px;
+    margin: auto;
+    width: 1300px;
+
+}
+
+.main-page {
+    box-shadow: 0 0 20px 0 rgb(12, 67, 75);
+    position: relative;
+    float: left;
+    width: 1000px;
+    background-color: rgba(31, 31, 31, 0.164);
+    padding: 0 11px;
+}
+
+
+.game-title{
+    font-family: "Lato-Light";
+    font-weight: 250;
+    font-size: 3em;
+
+}
+
+/*----------Game description-------------------------------*/
+
+.game-description{
+    margin: 25px 0 70px 0;
+    padding: 0 50px;
+}
+
+.game-description p{
+    padding: 0 50px;
+    line-height: 22px;
+    word-spacing: 2px;
+}
+
+/*--------------Gallery---------------------------------------------------------*/
+
+.gallery iframe{
+    width: 1000px;
+    height: 562px;
+}
+
+/*------------System requeriments-----------------------------------------------*/
+.reqBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 11px;
+    line-height: 25px;
+    margin: 0 0 70px 0;
+}
+
+.reqMin,.reqMax{
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+.reqBox .reqMin ul,.reqMax ul{
+    list-style: none;
+    padding: 0;
+    margin: 3px 0px;
+}
+
+.reqBox h3{
+    font-family: "Niramit-EL";
+    font-weight: 50;
+    letter-spacing: 3px;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+    text-transform: uppercase;
+}
+.reqBox li{
+    padding: 0 0 0 10px;
+    font-family: "Niramit-EL";
+}
+
+.reqBox li strong{
+     color: white;
+     font-size: 1.1em;
+     padding: 0 7px 0 0;
+}
+
+/* --------------------------------------Questions/Comments---------------------------------------------------- */
+
+.questions h2{
+    margin-left: 50px;
+}
+
+.questions form{
+    width: 625px;
+    margin: 100px 187px;
+    position: relative;
+    line-height: 2em;
+}
+
+.questions small{
+    color: rgb(235, 0, 0);
+
+}
+
+.questions input, .questions textarea{
+    position: relative;
+    float: right;
+    border-radius: 3px;
+    margin-top: 3px;
+    border: none;
+    padding: 0 3px;
+}
+
+.questions input{
+    height: 20px;
+    width: 200px;
+    margin-right: 200px;
+}
+
+.questions textarea{
+    width: 400px;
+    height: 7em;
+}
+
+.questions button{
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(0, 120, 175);
+    color: white;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    margin: 25px 0;
+
+}
+
+/*----------------Game footer-----------------*/
+
+.game-footer{
+    background-color: rgba(0, 0, 0, 0.336);
+    font-size: 0.8em;
+    bottom: 0;
+}
+
+/*---------------TITLE----------------------------------------------*/
+
+.req h2{
+    margin-left: 50px;
+}
+
+.req h2, .game-description h2, .questions h2{
+    text-align: center;
+    font-family: "Lato-Hair";
+    font-weight: 250;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 48px;
+    background-image: url("gradient_red1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+
+}
+
+/*-----------lateral-------------------------------------*/
+
+.lateral {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: white;
+    position: relative;
+    float: right;
+    width: 270px;
+    height: 1000px;
+    background-color: rgba(31, 31, 31, 0.164);
+    overflow: hidden;
+}
+
+.price1{
+    background-color: black;
+    line-height: 1.8em;
+}
+
+.price1 div{
+    margin:0;
+    padding: 15px 0 15px 0;
+}
+
+.price1 p{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.price1 span{
+    font-size: 0.7em;
+}
+
+.price1 small{
+    font-size: 0.6em;
+}
+
+.price1 button{
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(0, 120, 175);
+    color: white;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-left: 35px;
+}
+
+.price1{
+    background-color: black;
+    line-height: 1.8em;
+    margin:0;
+    padding: 15px 0 15px 0;
+    display: none;
+}
+
+
+.price1 p{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.price1 span{
+    font-size: 0.7em;
+}
+
+.price1 small{
+    font-size: 0.6em;
+}
+
+.price1 button{
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(0, 120, 175);
+    color: white;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-left: 260px;
+}
+
+/*------------Queries------------------------*/
+
+@media screen and (max-width: 1366px){
+
+    body{
+        font-weight: 70;
+        font-size: 0.9em;
+    }
+
+    .bodiv{
+        width: 1250px;
+    }
+
+    .main-page{
+        width: 950px;
+    }
+
+    .gallery iframe{
+        width: 936px;
+        height: 532px;
+    }
+    
+
+    .lateral {
+        position: relative;
+        float: right;
+        width: 270px;
+        height: 1000px;
+        overflow: hidden;
+    }
+
+    .lateral p{
+        width: 100%;
+    }
+
+    
+}
+@media screen and (max-width: 720px){
+    .bodiv{
+        width: 720px;
+        margin:0;
+        padding:0;
+    }
+    .main-page{
+        width: 720px;
+        margin: 0;
+        box-shadow: 0 0 0 0;
+    }
+    .reqBox{
+        grid-template-columns: 1fr;
+        padding: 0 100px;
+        font-size: 1em;
+    }
+    .questions form{
+        margin: 0 auto 50px;
+        float: none;
+    }
+    .gallery iframe{
+        width: 710px;
+        height: 399px;
+        margin: 0 5px;
+    }
+    .game-description h4{
+        font-size: 1.3em;
+    }
+    .lateral{
+        display: none;
+    }
+    .price1{
+        display: grid;
+    }
+}

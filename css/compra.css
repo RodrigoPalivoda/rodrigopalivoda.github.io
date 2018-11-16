@@ -1,0 +1,116 @@
+@font-face {font-family: "Meiryo";
+    src: url("//db.onlinewebfonts.com/t/704fb797ddcec1f88709024604df2940.eot");
+    src: url("//db.onlinewebfonts.com/t/704fb797ddcec1f88709024604df2940.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/704fb797ddcec1f88709024604df2940.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/704fb797ddcec1f88709024604df2940.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/704fb797ddcec1f88709024604df2940.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/704fb797ddcec1f88709024604df2940.svg#Meiryo") format("svg");
+}
+@font-face{ font-family: "hirakaku";
+    src: url(fonts/hirakakupro-w3.otf);
+}
+*{
+    overflow: hidden;
+    font-family: "hirakaku";
+}
+body{
+    background-image: url("8415464.jpg");
+    background-size: 100%;
+}
+.wrapper{
+    background-color: rgba(255, 255, 255, 0.37);
+    width: 720px;
+    margin: auto;
+}
+/* ラジオボタンは非表示にする */
+.metodo-pago input, .formato input{
+    display: none; 
+}
+/* チェックされた時のスタイル */
+.metodo-pago input[type="radio"]:checked + label, .formato input[type="radio"]:checked + label{
+    background: #0063A4;
+    color: #FFF; 
+    background-image: url("rdo2.png");
+    background-repeat: no-repeat;
+}
+/* マウスオーバーしたときのスタイル */
+.label:hover{
+    background-color: #E2EDF9; 
+}
+/* lableのスタイル */
+.label{
+    color: #000;
+    border: #dddddd solid 2px;
+    border-radius: 5px;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 40px; /* 背景画像の分だけ少し右へ */
+    padding-right: 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    background-image: url("rdo1.png");
+    background-repeat: no-repeat;
+}
+ul li{
+    list-style: none;
+    margin: 5px;
+}
+.metodo-pago, .formato{
+    margin-bottom: 50px;
+}
+.metodo-pago ul, .formato ul{
+    width: 264px;
+    margin: auto;
+    padding: 0;
+
+}
+.metodo-pago li, .formato li{
+    float: left;
+    width: 122px;
+}
+#shipping{
+    display: none;
+}
+#shipping-price{
+    display: none;
+}
+.double-line{
+    line-height: 16px;
+}
+.double-line{
+    padding-top: 6px;
+    height: 39px;
+}
+.datos .personales{
+    width: 500px;
+    height: 100px;
+    margin: auto;
+
+}
+.personales div{
+    position: relative;
+    float: right;
+    line-height: 40px;
+}
+.personales div input{
+    width: 210px;
+    height: 25px;
+    border-radius: 5px;
+    font-family: "hirakaku";
+    text-align: center;
+}
+.personales div label{
+    margin: 0 10px 0 0;
+    font-size: 17px;
+}
+/*---------------Table-------------------------------*/
+.costos table{
+    width: 700px;
+    margin: auto;
+    
+}
+table td:not(.motivo){
+    text-align: center;
+
+}
