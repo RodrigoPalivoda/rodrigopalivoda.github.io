@@ -90,9 +90,20 @@
     .nav-bar ul li .children{
         display: none;
         width: 120px;
-        margin-left: 300px;
-        height: 25px;
     }
+    .nav-bar ul li:hover .children{
+        display: grid;
+        position: absolute;
+        z-index: 100;
+        width: auto;
+        min-width: 85px;
+        text-align: center;
+        margin: -84px 0 0 300px;
+    }
+
+
+
+
     .s-nav-bar{
         display: block;
         background-color:rgb(0, 120, 175);
