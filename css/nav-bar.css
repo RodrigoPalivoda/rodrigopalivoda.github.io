@@ -69,6 +69,7 @@
 
 @media screen and (max-width: 720px){
     .nav-bar{
+        margin: 84px;
         display: block;
         width: 300px;
         position: fixed;
