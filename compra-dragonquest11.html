@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra</title>
+    <link rel="stylesheet" href="css/compra.css">
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+        <div class="game">
+            <div class="image">
+            </div>
+            <div class="cantidad">
+                <label for="juego-cantidad">Cantidad</label>
+                <input type="number" id="cantidad-juego" value="1">
+            </div>
+        </div>
+        <div class="datos">
+                <div class="personales">
+                    <div>
+                        <label for="nombre">Nombre y apellido:</label>
+                        <input type="text" id="nombre">
+                    </div>
+                    <div>
+                        <label for="mail">Mail:</label>
+                        <input type="email" id="mail">
+                    </div>
+                </div>
+        </div>
+        <div class="metodo-pago">
+            <ul>
+                <li id="check0">
+                    <input type="radio" name="rdo" id="rdo1">
+                    <label for="rdo1" class="label double-line">Depósito<br>bancario</label>
+                </li>
+                <li id="check1">
+                    <input type="radio" name="rdo" id="rdo2">
+                    <label for="rdo2" class="label">Tarjeta</label>
+                </li>
+            </ul>
+        </div>
+        <div class="formato">
+            <ul>
+                <li>
+                    <input type="radio" name="formato" id="fisico">
+                    <label for="fisico" class="label">Físico</label>
+                </li>
+                <li>
+                    <input type="radio" name="formato" id="digital">
+                    <label for="digital" class="label">Digital</label>
+                </li>
+            </ul>
+        </div>
+
+        <div id="shipping">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Tipo de envío</th>
+                        <th>Costo</th>
+                        <th>Demora</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="radio" id="envio-comun" name="envio"></td>
+                        <td>Común</td>
+                        <td>0.5%</td>
+                        <td>3-5 días</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="envio-especial" name="envio"></td>
+                        <td>Especial</td>
+                        <td>2%</td>
+                        <td>2-3 días</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="envio-premium" name="envio"></td>
+                        <td>Premium</td>
+                        <td>5%</td>
+                        <td>1-24 hs</td>
+                    </tr>
+                </tbody>
+            </table>      
+       </div>
+<!----------------tabla costo-------------------------->
+        <div class="costos">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Detalle</th>
+                        <th>Cantidad</th>
+                        <th>Importe ($)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="motivo">Compra</td>
+                        <td>juego</td>
+                        <td><span id="cantidad-total-juego"></span><span id="unidad"></span></td>
+                        <td id="precio-total-juego"></td>
+                    </tr>
+                    <tr class="costos" id="shipping-price">
+                        <td class="motivo">Envío</td>
+                        <td id="ship-qual"></td>
+                        <td id="ship-quan"></td>
+                        <td id="envio"></td>
+                    </tr>
+                    <tr>
+                        <td class="motivo">Impuestos</td>
+                        <td>i.v.a.</td>
+                        <td>22%</td>
+                        <td id="imp"></td>
+                    </tr>
+                    <tr>
+                        <td class="motivo">Total</td>
+                        <td></td>
+                        <td></td>
+                        <td id="total"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+<!-------------------------------------------------->
+    </div>
+    <script src="compra.js"></script>
+</body>
+</html>
