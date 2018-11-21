@@ -71,11 +71,11 @@ document.addEventListener("DOMContentLoaded", function(){
         var envioTotal = envio * subTotal;
         costoEnvio.innerHTML = envioTotal;
         var impTotal = (subTotal + envioTotal) * 0.22;
+    /*    impTotal = impTotal.toFixed(0); */
         impuestos.innerHTML = impTotal;
         var costoTotalTotal = subTotal + envioTotal + impTotal;
         costoTotal.innerHTML = costoTotalTotal;
-
-        envioTotal, impTotal, costoTotalTotal = envioTotal.toFixed(0), impTotal.toFixed(0), costoTotalTotal.toFixed(0);
+        
     });
 
 
