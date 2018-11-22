@@ -28,26 +28,25 @@ body {
 .bodiv {
     position: relative;
     top: 17px;
-    margin: auto;
+    margin: 0 auto 10px;
     width: 1300px;
 
 }
 
 .main-page {
-    box-shadow: 0 0 20px 0 rgb(12, 67, 75);
-    position: relative;
-    float: left;
     width: 1000px;
     background-color: rgba(31, 31, 31, 0.164);
     padding: 0 11px;
 }
 
-
 .game-title{
+    padding: 10px 0 15px 0;
+}
+.game-title h1{
     font-family: "Lato-Light";
     font-weight: 250;
-    font-size: 3em;
-
+    font-size: 32px;
+    text-align: center;
 }
 
 /*----------Game description-------------------------------*/
@@ -178,10 +177,10 @@ body {
 .req h2, .game-description h2, .questions h2{
     text-align: center;
     font-family: "Lato-Hair";
-    font-weight: 250;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: -1px;
-    font-size: 48px;
+    font-size: 32px;
     background-image: url("gradient_red1.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -195,7 +194,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    color: white;
+    color: rgb(228, 228, 228);
     position: relative;
     float: right;
     width: 270px;
@@ -203,7 +202,38 @@ body {
     background-color: rgba(31, 31, 31, 0.164);
     overflow: hidden;
 }
+.lateral .white{
+    color: white;
+    font-size: 32px;
+}
+.centered p{
+    text-align: center;
+    font-size: 24px;
+}
+.lateral .little{
+    font-size: 12px;
+}
+.lateral .button{
+    margin: auto;
+    width: 150px;
+    height: 45px;
+}
+.lateral button{
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(0, 120, 175);
+    color: white;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.lateral a{
+    text-decoration: none;
+    color: white;
+}
 
+/*--------lateral-hidden------------------------------*/
 .price1{
     background-color: black;
     line-height: 1.8em;
