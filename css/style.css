@@ -16,25 +16,25 @@
 }
 
 
-
 body {
     margin: 0;
     background-image: linear-gradient(rgb(38, 52, 54), rgb(0, 98, 110));
     color: rgb(238, 238, 238);
     font-family: "Niramit-EL";
-    font-weight: 100;
+    font-weight: 70;
+    font-size: 0.95em;
 }
 
 .bodiv {
     position: relative;
     top: 17px;
     margin: 0 auto 10px;
-    width: 1300px;
+    width: 1262px;
 
 }
 
 .main-page {
-    width: 1000px;
+    width: 950px;
     background-color: rgba(31, 31, 31, 0.164);
     padding: 0 11px;
 }
@@ -64,11 +64,37 @@ body {
 
 /*--------------Gallery---------------------------------------------------------*/
 
-.gallery iframe{
-    width: 1000px;
-    height: 562px;
+.video iframe{
+    width: 950px;
+    height: 540px;
 }
+.gallery .images{
+    display: grid;
+    width: 950px;
+    height: 106.9px;
+    grid-template-columns: repeat(5, 1fr);
 
+}
+.image0{
+    background-image: url("../media/dq11-small0.jpg");
+    background-repeat: none;
+}
+.image1{
+    background-image: url("../media/dq11-small1.jpg");
+    background-repeat: none;
+}
+.image2{
+    background-image: url("../media/dq11-small2.jpg");
+    background-repeat: none;
+}
+.image3{
+    background-image: url("../media/dq11-small3.jpg");
+    background-repeat: none;
+}
+.image4{
+    background-image: url("../media/dq11-small4.jpg");
+    background-repeat: none;
+}
 /*------------System requeriments-----------------------------------------------*/
 .reqBox{
     display: grid;
@@ -193,14 +219,16 @@ body {
 .lateral {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     color: rgb(228, 228, 228);
     position: relative;
     float: right;
-    width: 270px;
-    height: 1000px;
     background-color: rgba(31, 31, 31, 0.164);
+    width: 250px;
+    padding: 10px;
+    height: 660px;
     overflow: hidden;
+    margin: 10px;
 }
 .lateral .white{
     color: white;
@@ -209,6 +237,7 @@ body {
 .centered p{
     text-align: center;
     font-size: 24px;
+    width: 100%;
 }
 .lateral .little{
     font-size: 12px;
@@ -232,7 +261,6 @@ body {
     text-decoration: none;
     color: white;
 }
-
 /*--------lateral-hidden------------------------------*/
 .price1{
     background-color: black;
@@ -309,41 +337,6 @@ body {
 
 /*------------Queries------------------------*/
 
-@media screen and (max-width: 1366px){
-
-    body{
-        font-weight: 70;
-        font-size: 0.9em;
-    }
-
-    .bodiv{
-        width: 1250px;
-    }
-
-    .main-page{
-        width: 950px;
-    }
-
-    .gallery iframe{
-        width: 936px;
-        height: 532px;
-    }
-    
-
-    .lateral {
-        position: relative;
-        float: right;
-        width: 270px;
-        height: 1000px;
-        overflow: hidden;
-    }
-
-    .lateral p{
-        width: 100%;
-    }
-
-    
-}
 @media screen and (max-width: 720px){
     .bodiv{
         width: 720px;
@@ -353,7 +346,6 @@ body {
     .main-page{
         width: 720px;
         margin: 0;
-        box-shadow: 0 0 0 0;
     }
     .reqBox{
         grid-template-columns: 1fr;
@@ -364,7 +356,7 @@ body {
         margin: 0 auto 50px;
         float: none;
     }
-    .gallery iframe{
+    .vodeo iframe{
         width: 710px;
         height: 399px;
         margin: 0 5px;
