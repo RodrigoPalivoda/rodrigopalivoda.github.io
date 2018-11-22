@@ -1,46 +1,138 @@
 @font-face {font-family: "Meiryo";
     src: url("//db.onlinewebfonts.com/t/704fb797ddcec1f88709024604df2940.eot");
-    src: url("//db.onlinewebfonts.com/t/704fb797ddcec1f88709024604df2940.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/704fb797ddcec1f88709024604df2940.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/704fb797ddcec1f88709024604df2940.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/704fb797ddcec1f88709024604df2940.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/704fb797ddcec1f88709024604df2940.svg#Meiryo") format("svg");
 }
 @font-face{ font-family: "hirakaku";
     src: url(fonts/hirakakupro-w3.otf);
 }
+@font-face {
+    font-family: "Lato-Light";
+    src: url(fonts/Lato-Light.ttf);
+}
 *{
     overflow: hidden;
-    font-family: "hirakaku";
+    font-family: "Lato-Light";
+    font-weight: 200;
     color: rgb(238, 238, 238);
 
 }
 body{
     background-image: url("8415464.jpg");
-    background-size: 100%;
+    background-size: 
+}
+.red{
+    color: red;
+}
+.black{
+    color: black;
 }
 .wrapper{
-    background-color: rgba(0, 0, 0, 0.452);
+    background-color: rgba(0, 0, 0, 0.507);
     width: 720px;
-    min-width: 350px;
     margin: auto;
 }
-/* ラジオボタンは非表示にする */
+/*--------game---------------------*/
+.game{
+    width: 610px;
+    height: 87px;
+    margin: 10px auto;
+}
+.game .image{
+    background: url("../media/dragonquest11-small.jpg") no-repeat;
+    width: 500px;
+    height: 87px;
+    position: fixed;
+}
+.game .image .name{
+    margin-left: 192px;
+}
+.game .image h1{
+    font-size: 18px;
+    font-weight: 600;
+}
+.game .cantidad{
+    position: relative;
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+.game input{
+    width: 45px;
+    height: 40px;
+    padding-left: 12px;
+    font-size: 20px;
+    font-weight: 600;
+}
+/*-----------------*/
+.explanation{
+    width: 160px;
+    margin: 0 auto;
+}
 .metodo-pago input, .formato input{
     display: none; 
 }
-/* チェックされた時のスタイル */
-.metodo-pago input[type="radio"]:checked + label, .formato input[type="radio"]:checked + label{
+.metodo-pago input[type="radio"]:checked + label{
     background: #0063A4;
     color: #FFF; 
     background-image: url("rdo2.png");
     background-repeat: no-repeat;
 }
-/* マウスオーバーしたときのスタイル */
+.formato .fisico input[type="radio"]:checked + label{
+    background: #0063A4;
+    color: #FFF; 
+    background-image: url("fisic0.png");
+    background-repeat: no-repeat;
+    background-size: 33px;
+    background-position-x: 6px;
+    background-position-y: 6px;
+}
+.fisico .label0{
+    color: #000;
+    border: #dddddd solid 2px;
+    border-radius: 5px;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 46px;
+    padding-right: 14px;
+    cursor: pointer;
+    background-color: #ffffff;
+    background-image: url("fisic.png");
+    background-repeat: no-repeat;
+    background-size: 33px;
+    background-position-x: 6px;
+    background-position-y: 6px;
+}
+.formato .digital input[type="radio"]:checked + label{
+    background: #0063A4;
+    color: #FFF; 
+    background-image: url("digital0.png");
+    background-repeat: no-repeat;
+    background-size: 33px;
+    background-position-x: 6px;
+    background-position-y: 7px;
+}
+.digital .label0{
+    color: #000;
+    border: #dddddd solid 2px;
+    border-radius: 5px;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 46px;
+    padding-right: 14px;
+    cursor: pointer;
+    background-color: #ffffff;
+    background-image: url("digital.png");
+    background-repeat: no-repeat;
+    background-size: 33px;
+    background-position-x: 6px;
+    background-position-y: 7px;
+    font-weight: 500;
+}
+
 .label:hover{
     background-color: #E2EDF9; 
 }
-/* lableのスタイル */
 .label{
     color: #000;
     border: #dddddd solid 2px;
@@ -48,7 +140,7 @@ body{
     display: block;
     height: 45px;
     line-height: 45px;
-    padding-left: 40px; /* 背景画像の分だけ少し右へ */
+    padding-left: 40px;
     padding-right: 20px;
     cursor: pointer;
     background-color: #ffffff;
@@ -58,12 +150,14 @@ body{
 input{
     color: black;
 }
+/*-------------------------pago-----------------------------------*/
+
 ul li{
     list-style: none;
     margin: 5px;
 }
 .metodo-pago, .formato{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .metodo-pago ul, .formato ul{
     width: 264px;
@@ -75,12 +169,7 @@ ul li{
     float: left;
     width: 122px;
 }
-#shipping{
-    display: none;
-}
-#shipping-price{
-    display: none;
-}
+
 .double-line{
     line-height: 16px;
 }
@@ -88,29 +177,119 @@ ul li{
     padding-top: 6px;
     height: 39px;
 }
-.datos .personales{
-    width: 500px;
+/*-------------------------envío-------------------------------*/
+
+#shipping{
+    display: none;      /*cambiar*/
+}
+#shipping-price{
+    display: none;
+}
+.seleccion-envio{
+    width: 530px;
     height: 100px;
+    margin: auto;
+}
+select option{
+    color: #000;
+}
+/*---datos-envio------*/
+.datos-envio{
+    width: 530px;
+    margin: auto;
+    line-height: 15px;
+}
+.seleccion-envio{
+    height: 35px;
+    margin-bottom: 10px;
+}
+.seleccion-envio .seleccion0{
+    width: 170px;
+    position: relative;
+    float: left;
+}
+.seleccion1{
+    width: 170px;
+    position: relative;
+    margin: 0 0 0 180px;
+}
+.seleccion2{
+    width: 170px;
+    position: relative;
+    float: right;
+    margin-top: -35px;
+}
+.seleccion-envio select{
+    width: 170px;
+}
+/*-------------------tarjeta-----------------------*/
+.contenedor{
+    width: 400px;
+    height: 100px;
+    margin: auto;
+}
+.visa{
+    width: 200px;
+    position: fixed;
+}
+.master{
+    position: relative;
+    width: 64px;
+    height: 41px;
+    float: right;
+    width: 200px;
+}
+.master label{
+    width: 64px;
+    height: 41px;
+    background: url("../media/master.png") no-repeat;
+    padding: 21px;
+}
+/*      */
+.deposito p{
+    text-align: center;
+}
+/*------------personales-----------------------------------------*/
+.datos{
+    margin-top: 10px;
+}
+.personales{
+    width: 530px;
+    height: 73px;
     margin: auto;
 
 }
-.personales div{
+.personales .campo1{
+    position: relative;
+    float: left;
+    width: 260px;
+}
+.personales .campo2{
     position: relative;
     float: right;
-    line-height: 40px;
+    width: 260px;
+}
+.personales div{
+    line-height: 15px;
 }
 .personales div input{
-    width: 210px;
-    height: 25px;
+    width: 100%;
+    height: 22px;
     border-radius: 5px;
     font-family: "hirakaku";
     text-align: center;
 }
 .personales div label{
     margin: 0 10px 0 0;
-    font-size: 17px;
+    font-size: 16px;
 }
-/*---------------Table-------------------------------*/
+
+/*---------------Tables-------------------------------*/
+.envio-type{
+    margin: 0 auto 20px;
+}
+/*-----------------*/
+
 .costos{
     color: #000; 
 }

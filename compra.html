@@ -5,26 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compra</title>
     <link rel="stylesheet" href="css/compra.css">
+    <link rel="shortcut icon" href="aicon.ico">
 </head>
 <body>
     <div class="wrapper" id="wrapper">
         <div class="game">
             <div class="image">
+                <div class="name">
+                    <h1>DRAGON QUEST XI: Echoes of an Elusive Age<sup>TM</sup> - Digital Edition of Light</h1>
+                </div>
             </div>
             <div class="cantidad">
                 <label for="juego-cantidad">Cantidad</label>
                 <input type="number" id="cantidad-juego" value="1" min="1">
             </div>
         </div>
+        <div class="explanation">
+            <p class="red">* Datos requeridos</p>
+        </div>
         <div class="datos">
                 <div class="personales">
-                    <div>
-                        <label for="nombre">Nombre y apellido:</label>
-                        <input type="text" id="nombre">
+                    <div class="campo1">
+                        <label for="nombre">Nombre y apellido:<span class="red">*</span></label>
+                        <input type="text" id="nombre" required>
                     </div>
-                    <div>
-                        <label for="mail">Mail:</label>
-                        <input type="email" id="mail">
+                    <div class="campo2">
+                        <label for="mail">Mail:<span class="red">*</span></label>
+                        <input type="email" id="mail" required>
                     </div>
                 </div>
         </div>
@@ -40,21 +47,90 @@
                 </li>
             </ul>
         </div>
+        <!-----hidden--------------->
+        <div class="tarjeta">
+            <div class="contenedor">
+                <div class="visa">
+                    <input type="radio" name="tarjeta" id="visa">
+                    <label for="visa">Visa</label>
+                </div>
+                <div class="master">
+                    <input type="radio" name="tarjeta" id="master">
+                    <label for="master">Mastercard</label>
+                </div>
+            </div>
+            <div class="personales">
+                <div class="campo1">
+                    <label for="numero-tarjeta">Número de tarjeta:<span class="red">*</span></label>
+                    <input type="text" id="numero-tarjeta" required maxlength="16" minlength="16">
+                </div>
+                <div class="campo2">
+                    <label for="cedula">C.I.:<span class="red">*</span></label>
+                    <input type="number" id="cedula" required maxlength="8" minlength="8">
+                </div>
+            </div>
+        </div>
+        <div class="deposito">
+            <p>La cuenta BROU a realizar el pago es la siguiente:<br>042000089</p>
+            <p>Una vez realizado el pago se realizará el envío.</p>
+        </div>
+        <!-------------------------->
         <div class="formato">
             <ul>
-                <li>
+                <li class="fisico">
                     <input type="radio" name="formato" id="fisico">
-                    <label for="fisico" class="label">Físico</label>
+                    <label for="fisico" class="label0">Físico</label>
                 </li>
-                <li>
+                <li class="digital">
                     <input type="radio" name="formato" id="digital">
-                    <label for="digital" class="label">Digital</label>
+                    <label for="digital" class="label0">Digital</label>
                 </li>
             </ul>
         </div>
+        
 
         <div id="shipping">
-            <table>
+            <div class="datos-envio">
+                <div class="seleccion-envio">
+                    <div class="seleccion0 black">
+                        <label for="pais">País:</label>
+                        <select class="black" name="pais" id="pais" required>
+                            <option>Uruguay</option>
+                        </select>
+                    </div>
+                    <div class="seleccion1">
+                        <label for="departamento">Departamento:</label>
+                        <select class="black" name="departamento" id="departamento" required>
+                            <option>Salto</option>
+                            <option>Rocha</option>
+                            <option selected>Paysandú</option>
+                            <option>Artigas</option>
+                            <option>Montevideo</option>
+                        </select>
+                    </div>
+                    <div class="seleccion2">
+                        <label for="localidad">Localidad:</label>
+                        <select class="black" name="localidad" id="localidad" required>
+                            <option>Orgoroso</option>
+                            <option selected>Paysandú</option>
+                            <option>San Javier</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="personales">
+                        <div class="campo1">
+                            <label for="direccion">Dirección de envío:<span class="red">*</span></label>
+                            <input class="black" type="text" id="direccion" required minlength="9">
+                        </div>
+                        <div class="campo2">
+                            <label for="anotaciones">Anotaciones:</label>
+                            <input class="black" type="text" id="anotaciones">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table class="envio-type">
                 <thead>
                     <tr>
                         <th></th>
