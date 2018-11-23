@@ -1,0 +1,1 @@
+var juegosAccion = '[{"nombre":"Soulcalibur VI", "marca":"Bandainamco", "descuento":"50", "antes":"3360", "ahora":"1680", "link":"soulcalibur6.html", "imagen":"media/soulcalibur6-small.jpg"}]';

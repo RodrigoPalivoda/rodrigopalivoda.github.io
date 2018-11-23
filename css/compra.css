@@ -102,6 +102,9 @@ body{
     background-position-x: 6px;
     background-position-y: 6px;
 }
+.formato{
+    margin-top: 20px;
+}
 .formato .digital input[type="radio"]:checked + label{
     background: #0063A4;
     color: #FFF; 
@@ -223,27 +226,48 @@ select option{
     width: 170px;
 }
 /*-------------------tarjeta-----------------------*/
+.tarjeta{
+    display: none;
+}
+.deposito{
+    display: none;
+}
 .contenedor{
-    width: 400px;
-    height: 100px;
+    width: 500px;
+    height: 50px;
     margin: auto;
 }
 .visa{
-    width: 200px;
+    margin-left: 50px;
+    width: 230px;
     position: fixed;
+}
+.master input{
+    margin: 15px;
+    width: 20px;
+    height: 20px;
 }
 .master{
     position: relative;
-    width: 64px;
-    height: 41px;
     float: right;
-    width: 200px;
+    width: 230px;
 }
 .master label{
-    width: 64px;
-    height: 41px;
+    width: 150px;
+    height: 50px;
+    padding: 12px 12px 12px 68px;
     background: url("../media/master.png") no-repeat;
-    padding: 21px;
+}
+.visa input{
+    margin: 15px;
+    width: 20px;
+    height: 20px;
+}
+.visa label{
+    width: 150px;
+    height: 50px;
+    padding: 12px 12px 12px 70px;
+    background: url("../media/visa.png") no-repeat;
 }
 /*      */
 .deposito p{

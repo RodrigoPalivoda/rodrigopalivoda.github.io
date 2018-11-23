@@ -19,6 +19,11 @@ document.addEventListener("DOMContentLoaded", function(){
     var fisico = document.getElementById("fisico");
     var digital = document.getElementById("digital");
     var precioEnvio = document.getElementById("shipping-price");
+    var deposito = document.getElementById("deposito");
+    var tarjeta = document.getElementById("tarjeta");
+    var rdo1 = document.getElementById("rdo1");
+    var rdo2 = document.getElementById("rdo2");
+    var mail = document.getElementById("mail");
 
     precioTotalJuego.innerHTML = precio;
     impuestos.innerHTML = imp * precio;     
@@ -32,6 +37,19 @@ document.addEventListener("DOMContentLoaded", function(){
         cantidadTotalJuego.innerHTML = cantidad;
         subTotal = cantidad * precio;
         precioTotalJuego.innerHTML = subTotal;
+
+
+        if (rdo1.checked) {
+            deposito.style.display = "block"
+        } else if (rdo2.checked) {
+            deposito.style.display = "none"
+        }
+
+        if (rdo2.checked) {
+            tarjeta.style.display = "block"
+        } else if (rdo1.checked) {
+            tarjeta.style.display = "none"
+        }
 
 
         if (fisico.checked) {
@@ -67,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function(){
             unidad.innerHTML = " ud."
         }
 
+        document.getElementById("mail1").innerHTML = mail.value;
 
         var envioTotal = envio * subTotal;
         costoEnvio.innerHTML = envioTotal;
