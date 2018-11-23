@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function(){
     var tarjeta = document.getElementById("tarjeta");
     var rdo1 = document.getElementById("rdo1");
     var rdo2 = document.getElementById("rdo2");
+    var avisoDigital = document.getElementById("aviso-digital");
+
 
     precioTotalJuego.innerHTML = precio;
     impuestos.innerHTML = imp * precio;     
@@ -52,9 +54,11 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
         if (fisico.checked) {
-            document.getElementById("shipping").style.display = 'block'
+            document.getElementById("shipping").style.display = 'block';
+            avisoDigital.style.display = "none"
         } else if (digital.checked) {
             document.getElementById("shipping").style.display = 'none';
+            avisoDigital.style.display = "block"
         }
         
         if (fisico.checked) {
@@ -91,7 +95,6 @@ document.addEventListener("DOMContentLoaded", function(){
         var envioTotal = envio * subTotal;
         costoEnvio.innerHTML = envioTotal;
         var impTotal = (subTotal + envioTotal) * 0.22;
-    /*    impTotal = impTotal.toFixed(0); */
         impuestos.innerHTML = impTotal;
         var costoTotalTotal = subTotal + envioTotal + impTotal;
         costoTotal.innerHTML = costoTotalTotal;
