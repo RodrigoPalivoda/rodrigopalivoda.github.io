@@ -84,6 +84,9 @@ document.addEventListener("DOMContentLoaded", function(){
             unidad.innerHTML = " ud."
         }
 
+        
+        document.getElementById("mail1").innerHTML = mail.value;
+
 
         var envioTotal = envio * subTotal;
         costoEnvio.innerHTML = envioTotal;

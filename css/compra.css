@@ -15,6 +15,9 @@
     color: rgb(238, 238, 238);
 
 }
+html{
+    overflow: auto;
+}
 body{
     background-image: linear-gradient(rgb(38, 52, 54), rgb(0, 98, 110));
     margin: 0;
@@ -351,7 +354,7 @@ button{
     height: 60px;
     -webkit-clip-path: polygon(100% 0, 100% 100%, 25% 100%, 1% 50%, 26% 0);
     clip-path: polygon(100% 0, 100% 100%, 25% 100%, 1% 50%, 26% 0);       
-    background-color: red;
+    background-color: rgb(214, 1, 1);
     margin-left: 15%;
     position: fixed;
 }
