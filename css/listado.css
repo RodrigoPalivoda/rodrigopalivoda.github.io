@@ -82,7 +82,15 @@ body {
     height: 353px;
     margin: 0;
 }
-
+.img0{
+    background-image: url("../media/soulcalibur6-siegfried_small.jpg");
+}
+.img1{
+    background-image: url("../media/soulcalibur6-nightmare_small.jpg");
+}
+.img2{
+    background-image: url("../media/soulcalibur6-miturugi_small.jpg");
+}
 /*----offer--------*/
 .promotion .offer{
     background-color: rgb(0, 120, 175);
