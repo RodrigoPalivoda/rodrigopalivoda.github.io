@@ -4,64 +4,115 @@
         <meta charset="UTF-8">
         <meta name="author" content="Palivoda Rodrigo">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/nav-bar.css">
         <link rel="stylesheet" href="css/icon.css">
+        <script src="js/juegosAccion.js"></script>
+        <script src="js/juegosAventura.js"></script>
+        <script src="js/juegosRpg.js"></script>
+        <script src="js/todos.js"></script>
     </head>
     <body>
         <header>
-            <div class="s-nav-bar">
-                <a href="#" class="btn-menu"><span class="icon-menu"></span>Menu</a>
-<!------------------------------------------------------------------>
-
-            </div>
-            <nav class="nav-bar">
-                <ul class="parent">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="">A-Z</a>
-                        <ul class="children">
-                            <li><a href="listado-d.html">D</a></li>
-                            <li><a href="">M</a></li>
-                            <li><a href="">S</a></li>
-                        </ul>
-                    <li><a href="">Género</a>
-                        <ul class="children">
-                            <li><a href="listado-accion.html">Acción</a></li>
-                            <li><a href="listado-aventura.html">Aventura</a></li>
-                            <li><a href="listado-deportes.html">Deportes</a></li>
-                            <li><a href="listado-rpg.html">RPG</a></li>
-                            <li><a href="listado-simuladores.html">Simuladores</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Rating</a>
-                        <ul class="children extended-a">
-                            <li><a href="">Mejores de la última semana</a></li>
-                            <li><a href="">Mejores del mes</a></li>
-                            <li><a href="">Mejores del año</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Precio</a>
-                        <ul class="children extended-b">
-                            <li><a href="">Mayor</a></li>
-                            <li><a href="">Menor</a></li>
-                            <li><a href="">Free to play</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="reg-form.html">Registro</a></li>
-                </ul>
-            </nav>
-        </header>
+                <div class="s-nav-bar">
+                    <a href="#" class="btn-menu"><span class="icon-menu"></span>Menu</a>
+                </div>
+                <nav class="nav-bar">
+                    <ul class="parent">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="listado-todos.html">A-Z</a>
+                            <ul class="children">
+                                <li><a href="listado-d.html">D</a></li>
+                                <li><a href="">M</a></li>
+                                <li><a href="">S</a></li>
+                            </ul>
+                        <li><a href="listado-todos.html">Género</a>
+                            <ul class="children">
+                                <li><a href="listado-accion.html">Acción</a></li>
+                                <li><a href="listado-aventura.html">Aventura</a></li>
+                                <li><a href="listado-deportes.html">Deportes</a></li>
+                                <li><a href="listado-rpg.html">RPG</a></li>
+                                <li><a href="listado-simuladores.html">Simuladores</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="listado-todos.html">Rating</a>
+                            <ul class="children extended-a">
+                                <li><a href="listado-todos.html">Mejores de la última semana</a></li>
+                                <li><a href="listado-todos.html">Mejores del mes</a></li>
+                                <li><a href="listado-todos.html">Mejores del año</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="listado-todos.html">Precio</a>
+                            <ul class="children extended-b">
+                                <li><a href="listado-todos.html">Mayor</a></li>
+                                <li><a href="listado-todos.html">Menor</a></li>
+                                <li><a href="listado-todos.html">Free to play</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="reg-form.html">Registro</a></li>
+                    </ul>
+                </nav>
+            </header>
         <div class="bodiv">
             <div>
+                <h2>Ofertas de esta semana</h2>
+                <div class="promotion">
+                    <div class="offer">
+                        <div class="container">
+                            <div class="big">30</div>
+                            <div class="top">%</div>
+                            <div class="bottom">off</div>
+                        </div>
+                    </div>
+                    <!-----------------------gallery-------------------------------------->
+                    <a href="dragonquest11.html" class="gallery">
+                        <div class="img-big" style="background-image: url(media/dragon-quest.jpg)"></div>
+                        <div class="side">
+                            <div class="mini" style="background-image: url(media/dq11-big0.jpg)"></div>
+                            <div style="background-image: url(media/dq11-big4.jpg)"></div>
+                            <div style="background-image: url(media/dq11-big2.jpg)"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="promotion">
+                    <div class="offer">
+                        <div class="container">
+                            <div class="big">50</div>
+                            <div class="top">%</div>
+                            <div class="bottom">off</div>
+                        </div>
+                    </div>
+                    <!-----------------------gallery-------------------------------------->
+                    <a  href="" class="gallery">
+                        <div class="img-big" style="background-image: url(media/soulcalibur6-top.jpg)"></div>
+                        <div class="side">
+                            <div class="mini" style="background-image: url(media/soulcalibur6-siegfried_small.jpg)"></div>
+                            <div style="background-image: url(media/soulcalibur6-nightmare_small.jpg)"></div>
+                            <div style="background-image: url(media/soulcalibur6-miturugi_small.jpg)"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="promotion">
+                    <div class="offer">
+                        <div class="container">
+                            <div class="big">50</div>
+                            <div class="top">%</div>
+                            <div class="bottom">off</div>
+                        </div>
+                    </div>
+                    <!-----------------------gallery-------------------------------------->
+                    <a href="" class="gallery">
+                        <div class="img-big" style="background-image: url(media/metalgear5pp.jpg)"></div>
+                        <div class="side">
+                            <div class="mini" style="background-image: url(media/metalgear5pp0.jpg)"></div>
+                            <div style="background-image: url(media/metalgear5pp1.jpg)"></div>
+                            <div style="background-image: url(media/metalgear5pp2.jpg)"></div>
+                        </div>
+                    </a>
+                </div>
                 <h2>Novedades</h2>
-                <div class="list-new">
-                    <ul>
-                        <li>
-                            <figure>
-                                <img src="https://steamcdn-a.akamaihd.net/steam/apps/287700/header.jpg" alt="Metal gear 5 logo">
-                                <h3>METAL GEAR SOLID V: THE PHANTOM PAIN</h3>
-                            </figure>
-                        </li>
+                <div class="game-list">
+                    <ul id="game-list">
                     </ul>
                 </div>
             </div>
