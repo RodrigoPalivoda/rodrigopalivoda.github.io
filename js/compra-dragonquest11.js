@@ -24,6 +24,10 @@ document.addEventListener("DOMContentLoaded", function(){
     var rdo1 = document.getElementById("rdo1");
     var rdo2 = document.getElementById("rdo2");
     var mail = document.getElementById("mail");
+    var numeroTarjeta = document.getElementById("numero-tarjeta");
+    var cedula = document.getElementById("cedula");
+    var direccion = document.getElementById("direccion");
+
 
     precioTotalJuego.innerHTML = precio;
     impuestos.innerHTML = imp * precio;     
@@ -40,31 +44,30 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
         if (rdo1.checked) {
-            deposito.style.display = "block"
+            deposito.style.display = "block";
+            tarjeta.style.display = "none";
+            numeroTarjeta.removeAttribute("required");
+            cedula.removeAttribute("required");
         } else if (rdo2.checked) {
-            deposito.style.display = "none"
-        }
-
-        if (rdo2.checked) {
-            tarjeta.style.display = "block"
-        } else if (rdo1.checked) {
-            tarjeta.style.display = "none"
+            deposito.style.display = "none";
+            tarjeta.style.display = "block";
+            numeroTarjeta.setAttribute("required");
+            cedula.setAttribute("required");
         }
 
 
         if (fisico.checked) {
-            document.getElementById("shipping").style.display = 'block'
+            document.getElementById("shipping").style.display = 'block';
+            precioEnvio.style.display = 'none';
+            direccion.setAttribute("required");
         } else if (digital.checked) {
             document.getElementById("shipping").style.display = 'none';
+            precioEnvio.style.display = 'table-row';
+            direccion.removeAttribute("required");
+            envio.value = 0;
         }
         
-        if (fisico.checked) {
-            precioEnvio.style.display = 'table-row';
-        } else if (digital.checked) {
-            precioEnvio.style.display = 'none';
-            envio = 0;
-        }
-
+     
         if (envioComun.checked) {
             envio = 0.005;
             document.getElementById("ship-qual").innerHTML = "común";
@@ -90,7 +93,6 @@ document.addEventListener("DOMContentLoaded", function(){
         var envioTotal = envio * subTotal;
         costoEnvio.innerHTML = envioTotal;
         var impTotal = (subTotal + envioTotal) * 0.22;
-    /*    impTotal = impTotal.toFixed(0); */
         impuestos.innerHTML = impTotal;
         var costoTotalTotal = subTotal + envioTotal + impTotal;
         costoTotal.innerHTML = costoTotalTotal;

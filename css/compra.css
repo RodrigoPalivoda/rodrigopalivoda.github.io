@@ -33,6 +33,7 @@ body{
     background-color: rgba(0, 0, 0, 0.507);
     width: 720px;
     margin: 60px auto;
+    border-radius: 8px;
 }
 /*--------game---------------------*/
 .game{
@@ -360,6 +361,7 @@ button{
     margin-left: 15%;
     position: fixed;
     z-index: 100;
+    border-radius: 8px;
 }
 .cancel p{
     height: 60px;

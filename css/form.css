@@ -11,10 +11,14 @@
     box-sizing: border-box;
     font-family: "Niramit-Regular";
 }
+html{
+    margin: 0;
+    background-image: linear-gradient(rgb(38, 52, 54), rgb(0, 98, 110));
+    min-height: 100%;
+}
 
 body{
     margin: 0;
-    background-color: rgb(37, 37, 37);
     color: white;
 }
 
