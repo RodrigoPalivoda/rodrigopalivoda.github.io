@@ -6,6 +6,8 @@
         <title>Listado</title>
         <link rel="stylesheet" href="css/nav-bar.css">
         <link rel="stylesheet" href="css/listado.css">
+        <script src="js/juegosRpg.js"></script>
+        <script src="js/listadoRpg.js"></script>
     </head>
     <body>
 
@@ -53,14 +55,14 @@
         </header>
         <!-------------------------genre------------------------------------------------>
         <div class="header">
-            <h1>Listado de juegos de acción</h1>
+            <h1>Listado de juegos de RPG</h1>
         </div>
         <div class="genre">
             <ul>
-                <li class="selected">Acción</li>
+                <a href="listado-accion.html"><li>Acción</li></a>
                 <a href="listado-aventura.html"><li>Aventura</li></a>
                 <a href="listado-deportes.html"><li>Deportes</li></a>
-                <a href="listado-rpg.html"><li>RPG</li></a>
+                <li class="selected">RPG</li>
                 <a href="liistado-simuladores.html"><li>Simuladores</li></a>
             </ul>
         </div>
@@ -69,262 +71,34 @@
             <div class="promotion">
                 <div class="offer">
                     <div class="container">
-                        <div class="big">50</div>
+                        <div class="big">30</div>
                         <div class="top">%</div>
                         <div class="bottom">off</div>
                     </div>
                 </div>
                 <!-----------------------gallery-------------------------------------->
                 <div class="gallery">
-                    <div class="big" style="background-image: url(media/soulcalibur6-top.jpg)"></div>
+                    <div class="img-big" style="background-image: url(media/dragon-quest.jpg)"></div>
                     <div class="side">
-                        <div class="mini" style="background-image: url(media/soulcalibur6-siegfried_small.jpg)"></div>
-                        <div style="background-image: url(media/soulcalibur6-nightmare_small.jpg)"></div>
-                        <div style="background-image: url(media/soulcalibur6-miturugi_small.jpg)"></div>
+                        <div class="mini" style="background-image: url(media/dq11-big0.jpg)"></div>
+                        <div style="background-image: url(media/dq11-big4.jpg)"></div>
+                        <div style="background-image: url(media/dq11-big2.jpg)"></div>
                     </div>
                 </div>
             </div>
             <!----------------------------gamelist---------------------------------------------------->
             <div class="game-list">
-                <a href="soulcalibur6.html" class="game">
-                    <div class="image">
-                        <img src="media/soulcalibur6-small.jpg">
-                    </div>
-                    <div class="info">
-                        <span class="title">Soul Calibur VI</span><br>Bandainamco
-                    </div>
-                    <div class="windows" title="Windows"></div>
-                    <div class="price">
-                        <div class="total">
-                            <div class="before">$3360</div>
-                            <div class="after">$<span class="big">1680</span></div>
-                        </div>
-                        <div class="discount">-50%</div>
-                    </div>
-                </a>
-                <a href="dragon-quest-XI.html" class="game">
-                    <div class="image">
-                        <img src="media/dragonquest11-small.jpg">
-                    </div>
-                    <div class="info">
-                        <span class="title">Dragon Quest XI</span><br>Square Enix
-                    </div>
-                    <div class="windows" title="Windows"></div>
-                    <div class="price">
-                        <div class="total">
-                            <div class="before">$2100</div>
-                            <div class="after">$<span class="big">1470</span></div>
-                        </div>
-                        <div class="discount">-30%</div>
-                    </div>
-                </a>
-                <a href="metalgear5pp.html" class="game">
-                    <div class="image">
-                        <img src="media/metalgear5pp-small.jpg">
-                    </div>
-                    <div class="info">
-                        <span class="title">MGS V:<span class="small"> The Phantom Pain</span></span><br>Konami
-                    </div>
-                    <div class="windows" title="Windows"></div>
-                    <div class="price">
-                        <div class="total">
-                            <div class="normal">$<span class="big">2100</span></div>
-                        </div>
-                    </div>
-                </a>
-                <a href="soulcalibur6.html" class="game">
-                    <div class="image">
-                        <img src="media/soulcalibur6-small.jpg">
-                    </div>
-                    <div class="info">
-                        <span class="title">Soul Calibur VI</span><br>Bandainamco
-                    </div>
-                    <div class="windows" title="Windows"></div>
-                    <div class="price">
-                        <div class="total">
-                            <div class="before">$3360</div>
-                            <div class="after">$<span class="big">1680</span></div>
-                        </div>
-                        <div class="discount">-50%</div>
-                    </div>
-                </a>
-                <a href="dragon-quest-XI.html" class="game">
-                    <div class="image">
-                        <img src="media/dragonquest11-small.jpg">
-                    </div>
-                    <div class="info">
-                        <span class="title">Dragon Quest XI</span><br>Square Enix
-                    </div>
-                    <div class="windows" title="Windows"></div>
-                    <div class="price">
-                        <div class="total">
-                            <div class="before">$2100</div>
-                            <div class="after">$<span class="big">1470</span></div>
-                        </div>
-                        <div class="discount">-30%</div>
-                    </div>
-                </a>
-                <a href="metalgear5pp.html" class="game">
-                    <div class="image">
-                        <img src="media/metalgear5pp-small.jpg">
-                    </div>
-                    <div class="info">
-                        <span class="title">MGS V:<span class="small"> The Phantom Pain</span></span><br>Konami
-                    </div>
-                    <div class="windows" title="Windows"></div>
-                    <div class="price">
-                        <div class="total">
-                            <div class="normal">$<span class="big">2100</span></div>
-                        </div>
-                    </div>
-                </a>
-                <a href="soulcalibur6.html" class="game">
-                    <div class="image">
-                        <img src="media/soulcalibur6-small.jpg">
-                    </div>
-                    <div class="info">
-                        <span class="title">Soul Calibur VI</span><br>Bandainamco
-                    </div>
-                    <div class="windows" title="Windows"></div>
-                    <div class="price">
-                        <div class="total">
-                            <div class="before">$3360</div>
-                            <div class="after">$<span class="big">1680</span></div>
-                        </div>
-                        <div class="discount">-50%</div>
-                    </div>
-                </a>
-                <a href="dragon-quest-XI.html" class="game">
-                    <div class="image">
-                        <img src="media/dragonquest11-small.jpg">
-                    </div>
-                    <div class="info">
-                        <span class="title">Dragon Quest XI</span><br>Square Enix
-                    </div>
-                    <div class="windows" title="Windows"></div>
-                    <div class="price">
-                        <div class="total">
-                            <div class="before">$2100</div>
-                            <div class="after">$<span class="big">1470</span></div>
-                        </div>
-                        <div class="discount">-30%</div>
-                    </div>
-                </a>
-                <a href="metalgear5pp.html" class="game">
-                    <div class="image">
-                        <img src="media/metalgear5pp-small.jpg">
-                    </div>
-                    <div class="info">
-                        <span class="title">MGS V:<span class="small"> The Phantom Pain</span></span><br>Konami
-                    </div>
-                    <div class="windows" title="Windows"></div>
-                    <div class="price">
-                        <div class="total">
-                            <div class="normal">$<span class="big">2100</span></div>
-                        </div>
-                    </div>
-                </a>
-                <a href="soulcalibur6.html" class="game">
-                    <div class="image">
-                        <img src="media/soulcalibur6-small.jpg">
-                    </div>
-                    <div class="info">
-                        <span class="title">Soul Calibur VI</span><br>Bandainamco
-                    </div>
-                    <div class="windows" title="Windows"></div>
-                    <div class="price">
-                        <div class="total">
-                            <div class="before">$3360</div>
-                            <div class="after">$<span class="big">1680</span></div>
-                        </div>
-                        <div class="discount">-50%</div>
-                    </div>
-                </a>
-                <a href="dragon-quest-XI.html" class="game">
-                    <div class="image">
-                        <img src="media/dragonquest11-small.jpg">
-                    </div>
-                    <div class="info">
-                        <span class="title">Dragon Quest XI</span><br>Square Enix
-                    </div>
-                    <div class="windows" title="Windows"></div>
-                    <div class="price">
-                        <div class="total">
-                            <div class="before">$2100</div>
-                            <div class="after">$<span class="big">1470</span></div>
-                        </div>
-                        <div class="discount">-30%</div>
-                    </div>
-                </a>
-                <a href="metalgear5pp.html" class="game">
-                    <div class="image">
-                        <img src="media/metalgear5pp-small.jpg">
-                    </div>
-                    <div class="info">
-                        <span class="title">MGS V:<span class="small"> The Phantom Pain</span></span><br>Konami
-                    </div>
-                    <div class="windows" title="Windows"></div>
-                    <div class="price">
-                        <div class="total">
-                            <div class="normal">$<span class="big">2100</span></div>
-                        </div>
-                    </div>
-                </a>
-                <a href="soulcalibur6.html" class="game">
-                    <div class="image">
-                        <img src="media/soulcalibur6-small.jpg">
-                    </div>
-                    <div class="info">
-                        <span class="title">Soul Calibur VI</span><br>Bandainamco
-                    </div>
-                    <div class="windows" title="Windows"></div>
-                    <div class="price">
-                        <div class="total">
-                            <div class="before">$3360</div>
-                            <div class="after">$<span class="big">1680</span></div>
-                        </div>
-                        <div class="discount">-50%</div>
-                    </div>
-                </a>
-                <a href="dragon-quest-XI.html" class="game">
-                    <div class="image">
-                        <img src="media/dragonquest11-small.jpg">
-                    </div>
-                    <div class="info">
-                        <span class="title">Dragon Quest XI</span><br>Square Enix
-                    </div>
-                    <div class="windows" title="Windows"></div>
-                    <div class="price">
-                        <div class="total">
-                            <div class="before">$2100</div>
-                            <div class="after">$<span class="big">1470</span></div>
-                        </div>
-                        <div class="discount">-30%</div>
-                    </div>
-                </a>
-                <a href="metalgear5pp.html" class="game">
-                    <div class="image">
-                        <img src="media/metalgear5pp-small.jpg">
-                    </div>
-                    <div class="info">
-                        <span class="title">MGS V:<span class="small"> The Phantom Pain</span></span><br>Konami
-                    </div>
-                    <div class="windows" title="Windows"></div>
-                    <div class="price">
-                        <div class="total">
-                            <div class="normal">$<span class="big">2100</span></div>
-                        </div>
-                    </div>
-                </a>
+                <ul id="game-list">
+                </ul>
             </div>
         </div>
         <!--------------------------------------------------------------------------------->
             <div class="genre">
                 <ul>
-                    <li class="selected">Acción</li>
+                    <a href="listado-accion.html"><li>Acción</li></a>
                     <a href="listado-aventura.html"><li>Aventura</li></a>
                     <a href="listado-deportes.html"><li>Deportes</li></a>
-                    <a href="listado-rpg.html"><li>RPG</li></a>
+                    <li class="selected">RPG</li>
                     <a href="liistado-simuladores.html"><li>Simuladores</li></a>
                 </ul>
             </div>
